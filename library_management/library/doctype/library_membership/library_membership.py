@@ -8,7 +8,7 @@ class LibraryMembership(Document):
     # check before submitting this document
     def before_submit(self):
         exists = frappe.db.exists(
-            "Library Membership",
+           "Library Membership",
             {
                 "library_member": self.library_member,
                 "docstatus": DocStatus.submitted(),
